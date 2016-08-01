@@ -865,8 +865,10 @@ methods of the HtmlHelper and how to use them.
         <tr><td>Jul 7th, 2007</td><td>Best Brownies</td><td>Yes</td></tr>
         <tr><td>Jun 21st, 2007</td><td>Smart Cookies</td><td>Yes</td></tr>
         <tr><td>Aug 1st, 2006</td><td>Anti-Java Cake</td><td>No</td></tr>
+    
+    Create table cells containing additional attributes such as ID's and classes.
 
-    ::
+    .. code-block:: html
 
         echo $this->Html->tableCells(array(
             array(
@@ -875,7 +877,8 @@ methods of the HtmlHelper and how to use them.
                     'Best Brownies',
                     array('class' => 'highlight')
                 ),
-                'Yes'),
+                'Yes'
+            ),
             array('Jun 21st, 2007', 'Smart Cookies', 'Yes'),
             array(
                 'Aug 1st, 2006',
